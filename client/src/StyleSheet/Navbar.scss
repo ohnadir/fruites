@@ -1,4 +1,41 @@
-.header{
-    margin: 0;
-    color: red;
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    .navbar-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+            width: 60px;
+        }
+        p{
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            color: #da924e;
+        }
+    }
+    .nav-route ul {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 14px;
+        color: black;
+        li{
+            cursor: pointer;
+            padding-bottom: 7px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.1s ease;
+        }
+        li:hover{
+            border-bottom: 2px solid black;
+        }
+        .active{
+            border-bottom: 2px solid black;
+        }
+    }
 }
