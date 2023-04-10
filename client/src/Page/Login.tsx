@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import "../StyleSheet/Login.scss"
+import "../StyleSheet/Authentication.scss"
 
 const Login = () => {
     const [auth, setAuth] = useState();
     const handleChange = (e:any) => {
         setAuth(prev=>({...prev, [e.target.name]:e.target.value}))
-      }
+    }
     return (
         <div className='login'>
             <div className='login-form'>
