@@ -11,13 +11,13 @@ const Login = () => {
             <div className='login-form'>
                 <div >
                     <header className='p-3'>
-                        <img src="" alt="" />
-                        <p className='text-center'>Bangladesh Railway</p>
+                        <img src="https://d19qjkjk65tfln.cloudfront.net/img/login-page-logo.png" alt="" />
+                        <h1 className='text-center py-3'>Bangladesh Railway</h1>
                         <div>
-                            <ul className='flex justify-between'>
+                            <ul className=''>
                                 <li>নিরাপদ</li>
-                                <li>আরামদায়ক</li>
-                                <li>সাশ্রয়ী</li>
+                                <li className='child-two'>আরামদায়ক</li>
+                                <li className='child-three'>সাশ্রয়ী</li>
                             </ul>
                         </div>
                     </header>
@@ -25,8 +25,8 @@ const Login = () => {
                         <div className='login-form-container'>
                             <header className=''>
                                 <div className='flex justify-between p-3'>
-                                    <p>Forgot Password ?</p>
-                                    <p>Need Help?</p>
+                                    <p className='text-[#da924e] font-semibold'>Forgot Password ?</p>
+                                    <p className='text-[#bdc3c6] font-semibold'>Need Help?</p>
                                 </div>
                             </header>
                             <body className='grid grid-cols-1 gap-5 mt-5 p-3'>
