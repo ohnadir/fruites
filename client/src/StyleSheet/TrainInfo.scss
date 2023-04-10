@@ -1,0 +1,122 @@
+.train-info{
+    background-color: #F5F5F5;
+    padding-bottom: 100px;
+    .left-card{
+        width: 100%;
+        height: fit-content;
+        background-color: #f0f1fa;
+        padding: 16px;
+        h3{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #0F2444;
+            margin: 0 0 12px;
+        }
+        .train-name-container{
+            position: relative;
+            label{
+                font-weight: 500;
+                font-size: 10px;
+                color: #B4B6CC;
+                padding: 5px 0 0 10px;
+                position: absolute;
+            }
+            input{
+                background-color: white;
+                border-radius: 8px;
+                display: block;
+                width: 100%;
+                border: 1px solid transparent;
+                outline: 0;
+                box-sizing: border-box;
+                padding: 20px 10px 5px 10px;
+                border-radius: 4px;
+                color: black;
+                font-size: 13px;
+                font-weight: normal;
+                transition: border 0.1s ease;
+            }
+            input:focus{
+                border: 1px solid black;
+                background-color: #FFFFEE;
+            }
+            input:focus + .train-list-dropdown{
+                display: block;
+            }
+            .train-list-dropdown{
+                display: none;
+                background: #FFF;
+                box-shadow: 3px 4px 5px #aaa;
+                border-radius: 9px;
+                padding: 10px;
+                position: absolute;
+                width: 100%;
+                height: 200px;
+                overflow-y: auto;
+                border: 1px solid #DDDDDD;
+                border-bottom: 5px solid #FFF;
+                border-top: 5px solid #FFF;
+                li{
+                    padding: 5px;
+                    background-color: transparent;
+                    font-size: 14px;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                }
+                li:hover{
+                    background-color: #ddd;
+                    border-radius: 4px;
+                }
+                
+            }
+            
+        }
+        
+        
+        button{
+            width: 100%;
+            height: 36px;
+            margin-top: 15px;
+            border: 0;
+            outline: 0;
+            color: #FFFFFF;
+            font-size: 14px;
+            letter-spacing: 1px;
+            cursor: pointer;
+            background: #006747;
+            border-radius: 4px;
+        }
+    }
+    .right-card{
+        width: 100%;
+        min-height: 398px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 8px rgba(108, 152, 166, 0.05);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 0.1445px;
+            color: #595C7D;
+        }
+    }
+}
+::-webkit-scrollbar {
+    width: 3px;
+    max-height: 50%;
+}
+::-webkit-scrollbar-track {
+    background: #ddd; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
