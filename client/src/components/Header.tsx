@@ -3,7 +3,7 @@ import "../StyleSheet/Header.scss"
 
 const Header = () => {
     const [destination, setDestination] = useState();
-    const handleChange = (e) => {
+    const handleChange = (e:any) => {
         setDestination(prev=>({...prev, [e.target.name]:e.target.value}))
     }
     return (

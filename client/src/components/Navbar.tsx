@@ -1,5 +1,6 @@
 import "../StyleSheet/Navbar.scss";
 import { useNavigate } from "react-router-dom"
+import {GrMenu} from "react-icons/gr"
 const Navbar = () => {
   const navigate = useNavigate()
   return (
@@ -10,7 +11,10 @@ const Navbar = () => {
             <img src="https://d19qjkjk65tfln.cloudfront.net/v2/assets/img/home/bangladesh-railway.png" alt="" />
             <p>Bangladesh <br /> Railway</p>
           </div>
-          <div className="nav-route">
+          <div className="md:hidden ">
+            <GrMenu size={22} style={{color:"#089d49"}}/>
+          </div>
+          <div className="nav-route hidden md:block">
             <ul>
               <li onClick={()=>navigate('/')} className="active">Home</li>
               <li onClick={()=>navigate('/login')}>Login</li>

@@ -1,0 +1,76 @@
+.ticket-user-container{
+    .ticket-available-card{
+        .ticket-counter-container{
+            .counter-title{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+                color: #fff;
+                margin: 0;
+            }
+        }
+        .ticket-counter-container{
+            .counter-label{
+                margin: 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 14px;
+                color: #023623;
+                display: inline-block;
+            }
+            .available-tickets-counter{
+                margin: 0;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 27px;
+                line-height: 27px;
+                color: #023623;
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+    }
+    .user-counter-card{
+        .user-counter-header{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background: linear-gradient(90.83deg,#bc6e24 -.19%,#f4a861 102.47%);
+            padding: 6px  0 6px 12px;
+            .counter-title{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 21px;
+                color: #fff;
+                margin: 0;
+            }
+        }
+        .user-counter-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .counter-label{
+                margin: 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 14px;
+                color: #023623;
+                display: inline-block;
+            }
+            .login-in-user-count{
+                margin: 0;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 27px;
+                line-height: 27px;
+                color: #023623;
+                display: inline-block;
+                margin-left: 10px;
+            }
+        }
+    }
+}
