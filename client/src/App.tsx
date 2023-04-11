@@ -6,6 +6,7 @@ import Register from "./Page/Register"
 import TrainInfo from "./Page/TrainInfo"
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import UpdatedUi from "./components/UpdatedUi"
 
 function App() {
   AOS.init({ duration : 1000});
@@ -13,6 +14,7 @@ function App() {
     <div>
       <Navbar/>
       {/* <Header/> */}
+      <UpdatedUi/>
       <Routes>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>

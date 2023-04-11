@@ -1,16 +1,33 @@
 .ticket-user-container{
+    .last-updated-date-time{
+        margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #023623;
+    }
     .ticket-available-card{
-        .ticket-counter-container{
+        width: 100%;
+        .ticket-counter-header{
+            background: linear-gradient(90.83deg,#003424 -.19%,#4cbc9a 102.47%);
+            padding: 14px 26px 14px 20px;
+            border-radius: 8px 8px 0 0;
             .counter-title{
                 font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
+                font-weight: 500;
+                font-size: 15px;
                 line-height: 21px;
                 color: #fff;
                 margin: 0;
+                display: flex !important;
+                align-items: center !important;
+                gap: 6px;
             }
         }
         .ticket-counter-container{
+            background-color: #F2F7F5;
             .counter-label{
                 margin: 0;
                 font-style: normal;
@@ -33,12 +50,14 @@
         }
     }
     .user-counter-card{
+        width: 100%;
         .user-counter-header{
             display: flex;
             align-items: center;
             gap: 5px;
             background: linear-gradient(90.83deg,#bc6e24 -.19%,#f4a861 102.47%);
-            padding: 6px  0 6px 12px;
+            padding: 14px 26px 14px 20px;
+            border-radius: 8px 8px 0 0;
             .counter-title{
                 font-style: normal;
                 font-weight: 700;
@@ -51,7 +70,9 @@
         .user-counter-container{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            background-color: #F2F7F5;
+            padding: 16px;
             .counter-label{
                 margin: 0;
                 font-style: normal;
