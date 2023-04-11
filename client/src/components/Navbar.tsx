@@ -1,10 +1,12 @@
 import "../StyleSheet/Navbar.scss";
 import { useNavigate } from "react-router-dom"
-import {GrMenu} from "react-icons/gr"
+import { GrMenu, GrFormClose } from "react-icons/gr"
+import { useState } from "react";
 const Navbar = () => {
+  const [Open, setOpen] = useState(false)
   const navigate = useNavigate()
   return (
-    <div className="navbar">
+    <div className="navbar relative">
       <div className="py-[25px] max-w-7xl mx-auto px-10 lg:px-0">
         <div className="navbar-container">
           <div className="nav-logo">
@@ -12,7 +14,13 @@ const Navbar = () => {
             <p>Bangladesh <br /> Railway</p>
           </div>
           <div className="md:hidden ">
-            <GrMenu size={22} style={{color:"#089d49"}}/>
+            {
+              Open
+              ?
+              <GrFormClose onClick={()=>setOpen(!Open)} size={22} style={{color:"#089d49"}}/>
+              :
+              <GrMenu onClick={()=>setOpen(!Open)} size={22} style={{color:"#089d49"}}/>
+            }
           </div>
           <div className="nav-route hidden md:block">
             <ul>
@@ -25,6 +33,23 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {
+        Open
+        ?
+        <div className="nav-dropdown" data-aos="fade-down">
+          <div className="mobile-menu md:hidden max-w-7xl mx-auto px-10 lg:px-0">
+            <ul className="flex flex-col gap-5">
+              <li onClick={()=>navigate('/')} className="active">Home</li>
+              <li onClick={()=>navigate('/login')}>Login</li>
+              <li onClick={()=>navigate('/register')}>Register</li>
+              <li onClick={()=>navigate('/train_info')}>Train Information</li>
+              <li onClick={()=>navigate('/contact')}>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+        : null
+      }
+      
     </div>
   )
 }

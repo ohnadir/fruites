@@ -4,9 +4,11 @@ import Navbar from "./components/Navbar"
 import Login from "./Page/Login"
 import Register from "./Page/Register"
 import TrainInfo from "./Page/TrainInfo"
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 function App() {
-
+  AOS.init({ duration : 1000});
   return (
     <div>
       <Navbar/>
