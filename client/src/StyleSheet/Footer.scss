@@ -1,0 +1,64 @@
+.footer{
+    background-color: #f6f9ff;
+    border-top: 2px solid #079d49;
+    .footer-container{
+        padding: 20px 0;
+        .logo-container{
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-between;
+            img{
+                width: 55px;
+            }
+            .logo-slogan{
+                .slogan{
+                    margin: 0;
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #DA924E;
+                }
+                .bangla-text{
+                    margin: 0;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #006747;
+                    font-weight: 400;
+                    padding-top: 8px;
+                }
+            }
+            
+        }
+        .terms-condition{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            p{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 23px;
+                text-align: left !important;
+                color: #006747;
+                margin: 0;
+            }
+        }
+        .powered-by{
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 23px;
+            color: #000000;
+            .title{
+                margin: 0;
+            }
+            .company-name{
+                margin: 0;
+                font-size: 22px;
+                font-weight: bold;
+                color: #006747;
+            }
+        }
+    }
+}

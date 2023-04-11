@@ -9,6 +9,7 @@ import AOS from 'aos';
 import UpdatedUi from "./components/UpdatedUi"
 import Instruction from "./components/Instruction"
 import PaymentMethodList from "./components/PaymentMethodList"
+import Footer from "./components/Footer"
 
 function App() {
   AOS.init({ duration : 1000});
@@ -19,6 +20,7 @@ function App() {
       <UpdatedUi/>
       <Instruction/>
       <PaymentMethodList/>
+      <Footer/>
       <Routes>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
