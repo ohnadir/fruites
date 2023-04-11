@@ -7,6 +7,7 @@ import TrainInfo from "./Page/TrainInfo"
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import UpdatedUi from "./components/UpdatedUi"
+import Instruction from "./components/Instruction"
 
 function App() {
   AOS.init({ duration : 1000});
@@ -15,6 +16,7 @@ function App() {
       <Navbar/>
       {/* <Header/> */}
       <UpdatedUi/>
+      <Instruction/>
       <Routes>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
